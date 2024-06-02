@@ -78,15 +78,23 @@ nav ul li a {
     background-color: #f7f7f7;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
 }
 
 .categories ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px; /* Gap maior entre as categorias */
     margin: 0;
     padding: 0;
-    overflow-x: auto;
+    justify-content: center;
+}
+
+.categories ul li {
+    display: inline-block;
 }
 
 .categories ul li a {
