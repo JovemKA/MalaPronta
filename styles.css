@@ -5,8 +5,8 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
-  color: #4a4a4a; /* Atualizado para #4a4a4a */
-  background-color: #ffffff; /* Atualizado para #ffffff */
+  color: #4a4a4a;
+  background-color: #ffffff;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff; /* Atualizado para #ffffff */
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -34,7 +34,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #4a4a4a; /* Atualizado para #4a4a4a */
+  color: #4a4a4a;
   font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ nav ul li a {
   gap: 10px;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff; /* Atualizado para #ffffff */
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,8 +67,8 @@ nav ul li a {
 }
 
 .search-bar button {
-  background-color: #ffc005; /* Atualizado para #ffc005 */
-  color: #ffffff; /* Atualizado para #ffffff */
+  background-color: #ffc005;
+  color: #ffffff;
   border: none;
   border-radius: 50%;
   padding: 10px;
@@ -76,11 +76,11 @@ nav ul li a {
 }
 
 .search-bar button:hover {
-  background-color: #ffcd38; /* Atualizado para #ffcd38 */
+  background-color: #ffcd38;
 }
 
 .categories {
-  background-color: #ffffff; /* Atualizado para #ffffff */
+  background-color: #ffffff;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow-x: auto;
@@ -92,7 +92,7 @@ nav ul li a {
 .categories ul {
   list-style: none;
   display: flex;
-  gap: 40px; /* Gap maior entre as categorias */
+  gap: 40px;
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -104,13 +104,13 @@ nav ul li a {
 
 .categories ul li a {
   text-decoration: none;
-  color: #4a4a4a; /* Atualizado para #4a4a4a */
+  color: #4a4a4a;
   font-weight: bold;
   padding: 10px;
 }
 
 .categories ul li a:hover {
-  border-bottom: 2px solid #ffc005; /* Atualizado para #ffc005 */
+  border-bottom: 2px solid #ffc005;
 }
 
 main {
@@ -118,8 +118,9 @@ main {
 }
 
 .destinations,
-.travel-guides {
-  background-color: #ffffff; /* Atualizado para #ffffff */
+.travel-guides,
+.accommodations {
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -127,9 +128,10 @@ main {
 }
 
 .destinations h2,
-.travel-guides h2 {
+.travel-guides h2,
+.accommodations h2{
   font-family: "Roboto", sans-serif;
-  color: #ffc005; /* Atualizado para #ffc005 */
+  color: #ffc005;
 }
 
 .grid {
@@ -143,7 +145,7 @@ main {
 .card {
   max-width: 300px;
   border-radius: 0.5rem;
-  background-color: #ffffff; /* Atualizado para #ffffff */
+  background-color: #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -166,7 +168,7 @@ main {
   object-fit: cover;
   width: 100%;
   height: 150px;
-  background-color: #ffcd38; /* Atualizado para #ffcd38 */
+  background-color: #ffcd38;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -181,7 +183,7 @@ main {
 
 .desc {
   margin-top: 0.5rem;
-  color: #636363; /* Atualizado para #636363 */
+  color: #636363;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -189,13 +191,13 @@ main {
 .action {
   display: inline-flex;
   margin-top: 1rem;
-  color: #ffffff; /* Atualizado para #ffffff */
+  color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
   align-items: center;
   gap: 0.25rem;
-  background-color: #ffc005; /* Atualizado para #ffc005 */
+  background-color: #ffc005;
   padding: 4px 8px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
@@ -206,7 +208,7 @@ main {
 }
 
 .action:hover {
-  background-color: #ffcd38; /* Atualizado para #ffcd38 */
+  background-color: #ffcd38;
 }
 
 .action:hover span {
@@ -219,7 +221,7 @@ main {
   width: 330px;
   min-height: 370px;
   border-radius: 0.5rem;
-  background-color: #ffffff; /* Atualizado para #ffffff */
+  background-color: #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -240,7 +242,7 @@ main {
 
 .guide-card .card-image {
   min-height: 170px;
-  background-color: #ffcd38; /* Atualizado para #ffcd38 */
+  background-color: #ffcd38;
   border-radius: 15px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -256,9 +258,82 @@ main {
   float: right;
   margin: 28px 0 0 18px;
   font-size: 13px;
-  color: #636363; /* Atualizado para #636363 */
+  color: #636363;
 }
 
 .guide-card .by-name {
   font-weight: 700;
+}
+
+/* Estilização dos Cards de Hospedagens */
+.accommodation-card {
+  padding: 20px;
+  width: 330px;
+  min-height: 370px;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accommodation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.accommodation-card a {
+  text-decoration: none;
+}
+
+.accommodation-card .card-img {
+  object-fit: cover;
+  border-radius: 15px;
+  background-color: #ffcd38;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;min-height: 170px;
+}
+
+.accommodation-card .text-title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.accommodation-card .text-body {
+  margin-top: 0.5rem;
+  color: #636363;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.accommodation-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.accommodation-card .price {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #4a4a4a;
+  
+}
+
+.accommodation-card .card-button {
+  background-color: #ffc005;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accommodation-card .card-button:hover {
+  background-color: #ffcd38;
 }
