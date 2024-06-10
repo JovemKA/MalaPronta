@@ -1,0 +1,31 @@
+.destination-page {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.destination-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.destination-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.destination-image h1 {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.destination-section {
+  margin-bottom: 40px;
+}
+
+.destination-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
