@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Itapema",
+    "image": "itapema.jpg",
+    "description": "Conheça Itapema.",
+    "nightlife": "Atrações noturnas em Itapema.",
+    "shopping": "Locais de compras em Itapema.",
+    "events": "Eventos em Itapema.",
+    "bestTime": "Melhor época para visitar Itapema.",
+    "gettingThere": "Como chegar a Itapema.",
+    "touristInfo": "Informações turísticas sobre Itapema.",
+    "sightseeing": "Pontos turísticos em Itapema.",
+    "photos": ["photo1.jpg", "photo2.jpg", "photo3.jpg"]
+  }
+]
