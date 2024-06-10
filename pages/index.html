@@ -8,28 +8,13 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="logo.png" alt="MalaPronta Logo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#destinations">Destinos</a></li>
-          <li><a href="#travel-guides">Guias de Viagem</a></li>
-          <li><a href="#accommodations">Hospedagens</a></li>
-          <li><a href="#about">Sobre Nós</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-      <div class="user-menu">
-        <span class="language-selector">🌐</span>
-        <span class="menu-icon">☰</span>
-        <span class="user-icon">👤</span>
-      </div>
-    </header>
+    <!-- Incluindo o Header -->
+    <div id="header-container"></div>
+
     <section class="search-bar">
       <input type="text" placeholder="Buscar destinos" />
       <input type="text" placeholder="Data de Viagem" />
@@ -49,6 +34,7 @@
       </select>
       <button type="submit">🔍</button>
     </section>
+
     <div class="categories">
       <ul>
         <li><a href="#beaches">🏖️ Praias</a></li>
@@ -61,6 +47,7 @@
         <li><a href="#budget">💰 Econômico</a></li>
       </ul>
     </div>
+
     <main>
       <section class="destinations">
         <h2>Destinos Populares</h2>
@@ -68,39 +55,33 @@
           <div class="card">
             <div
               class="image"
-              style="background-image: url('destino1.jpg')"
+              style="background-image: url('assets/images/destino1.jpg')"
             ></div>
             <div class="content">
-              <a href="#">
-                <span class="title">Rio de Janeiro, Brasil</span>
-              </a>
+              <a href="#"><span class="title">Rio de Janeiro, Brasil</span></a>
               <p class="desc">
                 Explore as praias maravilhosas e o vibrante cenário cultural do
                 Rio de Janeiro.
               </p>
-              <a class="action" href="#">
-                Saiba mais
-                <span aria-hidden="true">→</span>
-              </a>
+              <a class="action" href="#"
+                >Saiba mais <span aria-hidden="true">→</span></a
+              >
             </div>
           </div>
           <div class="card">
             <div
               class="image"
-              style="background-image: url('destino2.jpg')"
+              style="background-image: url('assets/images/destino2.jpg')"
             ></div>
             <div class="content">
-              <a href="#">
-                <span class="title">Foz do Iguaçu, Brasil</span>
-              </a>
+              <a href="#"><span class="title">Foz do Iguaçu, Brasil</span></a>
               <p class="desc">
                 Descubra as espetaculares cataratas de Foz do Iguaçu e suas
                 maravilhas naturais.
               </p>
-              <a class="action" href="#">
-                Saiba mais
-                <span aria-hidden="true">→</span>
-              </a>
+              <a class="action" href="#"
+                >Saiba mais <span aria-hidden="true">→</span></a
+              >
             </div>
           </div>
           <!-- Adicionar mais cards conforme necessário -->
@@ -113,12 +94,12 @@
           <div class="card guide-card">
             <div
               class="card-image"
-              style="background-image: url('guia1.jpg')"
+              style="background-image: url('assets/images/guia1.jpg')"
             ></div>
             <div class="content">
-              <a href="">
-                <span class="card-title">Explorando o Amazonas</span>
-              </a>
+              <a href=""
+                ><span class="card-title">Explorando o Amazonas</span></a
+              >
               <p class="card-body">
                 Nullam ac tristique nulla, at convallis quam. Integer
                 consectetur mi nec magna tristique, non lobortis.
@@ -132,12 +113,12 @@
           <div class="card guide-card">
             <div
               class="card-image"
-              style="background-image: url('guia2.jpg')"
+              style="background-image: url('assets/images/guia2.jpg')"
             ></div>
             <div class="content">
-              <a href="">
-                <span class="card-title">Roteiro Cultural em Salvador</span>
-              </a>
+              <a href=""
+                ><span class="card-title">Roteiro Cultural em Salvador</span></a
+              >
               <p class="card-body">
                 Nullam ac tristique nulla, at convallis quam. Integer
                 consectetur mi nec magna tristique, non lobortis.
@@ -158,12 +139,10 @@
           <div class="accommodation-card">
             <div
               class="card-img"
-              style="background-image: url('hospedagem1.jpg')"
+              style="background-image: url('assets/images/hospedagem1.jpg')"
             ></div>
             <div class="content">
-              <a href="#">
-                <span class="text-title">Hotel Fazenda, MG</span>
-              </a>
+              <a href="#"><span class="text-title">Hotel Fazenda, MG</span></a>
               <p class="text-body">
                 Aproveite um final de semana relaxante no campo com toda a
                 família.
@@ -177,12 +156,12 @@
           <div class="accommodation-card">
             <div
               class="card-img"
-              style="background-image: url('hospedagem2.jpg')"
+              style="background-image: url('assets/images/hospedagem2.jpg')"
             ></div>
             <div class="content">
-              <a href="#">
-                <span class="text-title">Pousada das Flores, RJ</span>
-              </a>
+              <a href="#"
+                ><span class="text-title">Pousada das Flores, RJ</span></a
+              >
               <p class="text-body">
                 Desfrute da tranquilidade e beleza da natureza na Pousada das
                 Flores.
@@ -197,5 +176,11 @@
         </div>
       </section>
     </main>
+
+    <!-- Incluindo o Footer -->
+    <div id="footer-container"></div>
+
+    <script src="/assets/js/utils.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
