@@ -1,12 +1,21 @@
 /* Importação das fontes */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
-body {
-  font-family: "Lato", sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
+  font-family: "Lato", sans-serif;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   color: #4a4a4a;
   background-color: #ffffff;
+  line-height: 1.5;
 }
 
 header {
@@ -129,7 +138,7 @@ main {
 
 .destinations h2,
 .travel-guides h2,
-.accommodations h2{
+.accommodations h2 {
   font-family: "Roboto", sans-serif;
   color: #ffc005;
 }
@@ -291,7 +300,8 @@ main {
   border-radius: 15px;
   background-color: #ffcd38;
   border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;min-height: 170px;
+  border-top-right-radius: 0.5rem;
+  min-height: 170px;
 }
 
 .accommodation-card .text-title {
@@ -321,7 +331,6 @@ main {
   font-weight: 700;
   font-size: 1rem;
   color: #4a4a4a;
-  
 }
 
 .accommodation-card .card-button {
