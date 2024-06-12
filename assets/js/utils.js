@@ -45,3 +45,22 @@ lightbox.addEventListener("click", (e) => {
     lightbox.style.display = "none";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const breadcrumbContainer = document.getElementById("breadcrumb-container");
+  if (breadcrumbContainer) {
+    breadcrumbContainer.innerHTML = `
+          <div class="breadcrumb">
+              <nav aria-label="breadcrumb">
+                  <ul class="breadcrumb-list">
+                      <li class="breadcrumb-item"><a href="/">Mala Pronta</a></li>
+                      <li class="breadcrumb-separator">/</li>
+                      <li class="breadcrumb-item"><a href="/destinos.html">Destinos</a></li>
+                      <li class="breadcrumb-separator">/</li>
+                      <li class="breadcrumb-item active" aria-current="page">Foz do Iguaçu</li>
+                  </ul>
+              </nav>
+          </div>
+      `;
+  }
+});
