@@ -228,6 +228,20 @@ main {
   transform: translateX(4px);
 }
 
+.tags {
+  margin: 5px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 6px;
+  margin-right: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
 /* Estilização dos Cards de Guias */
 .guide-card {
   padding: 20px;
