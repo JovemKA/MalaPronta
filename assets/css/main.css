@@ -181,6 +181,9 @@ main {
   background-color: #ffcd38;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .title {
