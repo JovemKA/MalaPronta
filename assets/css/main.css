@@ -1,6 +1,19 @@
 /* Importação das fontes */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
+/* Variáveis de Cores */
+:root {
+  --cor-principal: #3498db;
+  --cor-secundaria: #2ecc71;
+  --cor-fundo: #f5f5f5;
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #7f8c8d;
+  --cor-destaque: #e74c3c;
+  --cor-branca: #ffffff;
+  --cor-cinza-claro: #cccccc;
+  --cor-cinza-escuro: #555555;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,8 +26,8 @@ html {
 }
 
 body {
-  color: #4a4a4a;
-  background-color: #ffffff;
+  color: var(--cor-texto-principal);
+  background-color: var(--cor-fundo);
   line-height: 1.6;
   text-align: justify;
 }
@@ -24,7 +37,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,7 +57,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: var(--cor-texto-principal);
   font-weight: bold;
 }
 
@@ -64,21 +77,21 @@ nav ul li a {
   gap: 10px;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar input,
 .search-bar select {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--cor-cinza-claro);
   border-radius: 20px;
   outline: none;
 }
 
 .search-bar button {
-  background-color: #ffc005;
-  color: #ffffff;
+  background-color: var(--cor-principal);
+  color: var(--cor-branca);
   border: none;
   border-radius: 50%;
   padding: 10px;
@@ -86,11 +99,11 @@ nav ul li a {
 }
 
 .search-bar button:hover {
-  background-color: #ffcd38;
+  background-color: var(--cor-secundaria);
 }
 
 .categories {
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow-x: auto;
@@ -114,13 +127,13 @@ nav ul li a {
 
 .categories ul li a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: var(--cor-texto-principal);
   font-weight: bold;
   padding: 10px;
 }
 
 .categories ul li a:hover {
-  border-bottom: 2px solid #ffc005;
+  border-bottom: 2px solid var(--cor-destaque);
 }
 
 main {
@@ -130,7 +143,7 @@ main {
 .destinations,
 .travel-guides,
 .accommodations {
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -141,7 +154,7 @@ main {
 .travel-guides h2,
 .accommodations h2 {
   font-family: "Roboto", sans-serif;
-  color: #ffc005;
+  color: var(--cor-principal);
 }
 
 .grid {
@@ -155,7 +168,7 @@ main {
 .card {
   max-width: 300px;
   border-radius: 0.5rem;
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -178,7 +191,7 @@ main {
   object-fit: cover;
   width: 100%;
   height: 150px;
-  background-color: #ffcd38;
+  background-color: var(--cor-secundaria);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   background-size: cover;
@@ -187,7 +200,7 @@ main {
 }
 
 .title {
-  color: #111827;
+  color: var(--cor-texto-principal);
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -196,7 +209,7 @@ main {
 
 .desc {
   margin-top: 0.5rem;
-  color: #636363;
+  color: var(--cor-texto-secundario);
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -204,13 +217,13 @@ main {
 .action {
   display: inline-flex;
   margin-top: 1rem;
-  color: #ffffff;
+  color: var(--cor-branca);
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
   align-items: center;
   gap: 0.25rem;
-  background-color: #ffc005;
+  background-color: var(--cor-principal);
   padding: 4px 8px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
@@ -221,7 +234,7 @@ main {
 }
 
 .action:hover {
-  background-color: #ffcd38;
+  background-color: var(--cor-secundaria);
 }
 
 .action:hover span {
@@ -236,8 +249,8 @@ main {
   display: inline-block;
   padding: 3px 6px;
   margin-right: 5px;
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: var(--cor-principal);
+  color: var(--cor-branca);
   border-radius: 5px;
   font-size: 0.9em;
 }
@@ -248,7 +261,7 @@ main {
   width: 330px;
   min-height: 370px;
   border-radius: 0.5rem;
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -259,7 +272,7 @@ main {
 }
 
 .guide-card .card-title {
-  color: #111827;
+  color: var(--cor-texto-principal);
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -269,7 +282,7 @@ main {
 
 .guide-card .card-image {
   min-height: 170px;
-  background-color: #ffcd38;
+  background-color: var(--cor-secundaria);
   border-radius: 15px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -280,7 +293,7 @@ main {
 
 .guide-card .card-body {
   margin: 13px 0 0 10px;
-  color: #1f1f1f;
+  color: var(--cor-texto-principal);
   font-size: 15px;
 }
 
@@ -288,7 +301,7 @@ main {
   float: right;
   margin: 28px 0 0 18px;
   font-size: 13px;
-  color: #636363;
+  color: var(--cor-texto-secundario);
 }
 
 .guide-card .by-name {
@@ -301,7 +314,7 @@ main {
   width: 330px;
   min-height: 370px;
   border-radius: 0.5rem;
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -319,7 +332,7 @@ main {
 .accommodation-card .card-img {
   object-fit: cover;
   border-radius: 15px;
-  background-color: #ffcd38;
+  background-color: var(--cor-secundaria);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   min-height: 170px;
@@ -329,7 +342,7 @@ main {
 }
 
 .accommodation-card .text-title {
-  color: #111827;
+  color: var(--cor-texto-principal);
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -338,7 +351,7 @@ main {
 
 .accommodation-card .text-body {
   margin-top: 0.5rem;
-  color: #636363;
+  color: var(--cor-texto-secundario);
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -348,18 +361,18 @@ main {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--cor-cinza-claro);
 }
 
 .accommodation-card .price {
   font-weight: 700;
   font-size: 1rem;
-  color: #4a4a4a;
+  color: var(--cor-texto-principal);
 }
 
 .accommodation-card .card-button {
-  background-color: #ffc005;
-  color: #ffffff;
+  background-color: var(--cor-principal);
+  color: var(--cor-branca);
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -368,12 +381,12 @@ main {
 }
 
 .accommodation-card .card-button:hover {
-  background-color: #ffcd38;
+  background-color: var(--cor-secundaria);
 }
 
 /* Estilo para a seção Sobre */
 .about {
-  background-color: #f9f9f9;
+  background-color: var(--cor-fundo);
   padding: 40px 0;
 }
 
@@ -386,19 +399,19 @@ main {
 .about h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--cor-texto-principal);
 }
 
 .about p {
   font-size: 1em;
   line-height: 1.6;
-  color: #666;
+  color: var(--cor-texto-secundario);
   margin-bottom: 20px;
 }
 
 /* Estilo para a seção Contato */
 .contact {
-  background-color: #ffffff;
+  background-color: var(--cor-branca);
   padding: 40px 0;
 }
 
@@ -411,7 +424,7 @@ main {
 .contact h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--cor-texto-principal);
 }
 
 .contact .form-group {
@@ -422,7 +435,7 @@ main {
   display: block;
   font-size: 1em;
   margin-bottom: 5px;
-  color: #333;
+  color: var(--cor-texto-principal);
 }
 
 .contact input,
@@ -430,20 +443,20 @@ main {
   width: 100%;
   padding: 10px;
   font-size: 1em;
-  border: 1px solid #ddd;
+  border: 1px solid var(--cor-cinza-claro);
   border-radius: 5px;
 }
 
 .contact button {
   padding: 10px 20px;
   font-size: 1em;
-  color: #fff;
-  background-color: #333;
+  color: var(--cor-branca);
+  background-color: var(--cor-texto-principal);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .contact button:hover {
-  background-color: #555;
+  background-color: var(--cor-cinza-escuro);
 }

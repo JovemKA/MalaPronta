@@ -1,67 +1,112 @@
-.container {
-    display: flex;
+/* Variáveis de Cores */
+:root {
+    --cor-principal: #3498db;
+    --cor-secundaria: #2ecc71;
+    --cor-fundo: #f5f5f5;
+    --cor-texto-principal: #333333;
+    --cor-texto-secundario: #7f8c8d;
+    --cor-destaque: #e74c3c;
+    --cor-branca: #ffffff;
+    --cor-cinza-claro: #cccccc;
+    --cor-cinza-escuro: #555555;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0.5em auto;
+    padding: 0 20px;
+  }
+  
+  .travel-guide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--cor-branca);
+    border-radius: 10px;
     padding: 20px;
-    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.author-info {
+  }
+  
+  .author-info {
     flex: 0 0 250px;
-    margin-right: 20px;
     text-align: center;
-}
-
-.author-photo {
+  }
+  
+  .author-photo {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
-}
-
-.author-details {
+  }
+  
+  .author-details {
     margin-top: 10px;
-}
-
-.author-details h2 {
+  }
+  
+  .author-details h3 {
     font-size: 1.5em;
     margin: 10px 0 5px 0;
-}
-
-.author-details p {
+  }
+  
+  .author-details p {
     font-size: 0.9em;
-    color: #555555;
-}
-
-.content {
+    color: var(--cor-cinza-escuro);
+  }
+  
+  .content {
     flex: 1;
-}
-
-.content h1 {
+    padding: 20px;
+  }
+  
+  .content h1 {
     font-size: 2em;
-    color: #333333;
+    color: var(--cor-texto-principal);
     margin-bottom: 20px;
-}
-
-.content h2 {
+  }
+  
+  .content h2 {
     font-size: 1.5em;
-    color: #666666;
+    color: var(--cor-texto-secundario);
     margin-top: 30px;
     margin-bottom: 10px;
-}
-
-.content p {
+  }
+  
+  .content p {
     line-height: 1.6;
-    color: #555555;
+    color: var(--cor-cinza-escuro);
     margin: 0 auto 20px;
-}
-
-.content a {
-    color: #007bff;
+  }
+  
+  .content a {
+    color: var(--cor-principal);
     text-decoration: none;
-}
-
-.content a:hover {
+  }
+  
+  .content a:hover {
     text-decoration: underline;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .travel-guide {
+      flex-direction: column;
+    }
+  
+    .author-info {
+      flex: 1;
+    }
+  
+    .content {
+      flex: 1;
+      padding: 0;
+    }
+  }
+  
