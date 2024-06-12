@@ -259,6 +259,9 @@ main {
   border-radius: 15px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .guide-card .card-body {
@@ -306,6 +309,9 @@ main {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   min-height: 170px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .accommodation-card .text-title {
