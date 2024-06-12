@@ -350,3 +350,80 @@ main {
 .accommodation-card .card-button:hover {
   background-color: #ffcd38;
 }
+
+/* Estilo para a seção Sobre */
+.about {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilo para a seção Contato */
+.contact {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact .form-group {
+  margin-bottom: 20px;
+}
+
+.contact label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
